@@ -1,0 +1,25 @@
+// js/productos.js
+export const listaProductos = [
+    { id: 1, nombre: "Rosa Amarilla", precio: 16000, desc: "Cálido y lleno de vida", img: "/frontend/imagenes/rosaAmarillita.png" },
+    { id: 2, nombre: "Rosa Roja", precio: 16000, desc: "Sentimental y Novelesco", img: "/frontend/imagenes/rosaRoja.png" },
+    { id: 3, nombre: "Rosa Rosada", precio: 16000, desc: "Entrañable y Cordial", img: "/frontend/imagenes/rosaRosada.png" },
+    { id: 4, nombre: "Rosa Azul", precio: 16000, desc: "Serena y Modesta", img: "/frontend/imagenes/rosaAzul.png" },
+    { id: 5, nombre: "Rosa Fucsia", precio: 16000, desc: "Viva y audaz", img: "/frontend/imagenes/rosaFucsia.png" },
+    { id: 6, nombre: "Tulipán Lila", precio: 16000, desc: "Encantador y Mágico", img: "/frontend/imagenes/tulipanLila.png" },
+    { id: 7, nombre: "Tulipán Cian", precio: 16000, desc: "Fresco y sutil", img: "/frontend/imagenes/tulipanCyan.png" },
+    { id: 8, nombre: "Tulipán Rosa", precio: 16000, desc: "Tierno y Delicado", img: "/frontend/imagenes/tulipanRosa.png" },
+    { id: 9, nombre: "Tulipán Blanco", precio: 16000, desc: "Sobrio y Elegante", img: "/frontend/imagenes/tulipanBlanco.png" },
+    { id: 10, nombre: "Tulipán Azul", precio: 16000, desc: "Fresco y perspicaz", img: "/frontend/imagenes/tulipanAzul.png" },
+    { id: 11, nombre: "Ramo Rosas Amarillas", precio: 85000, desc: "Un sol en cada pétalo", img: "/frontend/imagenes/ramoRosasAmarillas.png" },
+    { id: 12, nombre: "Ramo Rosas Negras y Doradas", precio: 85000, desc: "Elegante y sofisticado", img: "/frontend/imagenes/ramoRosasNegrasDoradas.png" },
+    { id: 13, nombre: "Ramo Rosas Rosadas", precio: 38000, desc: "Dulce y Suave", img: "/frontend/imagenes/ramoRosasRosadas.png" },
+    { id: 14, nombre: "Ramo Rosas Moradas Rosadas", precio: 38000, desc: "Fuertes y Adorables", img: "/frontend/imagenes/ramoRosasRosadasMoradas.png" },
+    { id: 15, nombre: "Corazón Rosas Rosadas Moradas", precio: 53000, desc: "Románticas y Convincentes", img: "/frontend/imagenes/corazonRosasRosadasMoradas.png" },
+    { id: 16, nombre: "Ramo Rosas Tonos Morados", precio: 75000, desc: "Lujosas y Encantadoras", img: "/frontend/imagenes/ramoRosasTonosMorados.png" },
+    { id: 17, nombre: "Ramo Rosas Rosadas Amarillas", precio: 32000, desc: "Densas y Juveniles", img: "/frontend/imagenes/ramoRosasRosadasAmarillas.png" },
+    { id: 18, nombre: "Corazón Rosas Rojas", precio: 74000, desc: "Seductoras y Refinadas", img: "/frontend/imagenes/corazonRosasRojas.png" },
+    { id: 19, nombre: "Ramo Especial Flores Moradas Doradas", precio: 110000, desc: "Hermosas y Selectas", img: "/frontend/imagenes/ramoFloresMoradasDoradas.png" },
+    { id: 20, nombre: "Ramo Rosas Rojas", precio: 75000, desc: "Tradicionales Amor Puro y Vivo", img: "/frontend/imagenes/ramoRosasRojas.png" },
+    { id: 21, nombre: "Ramo Flores Lila", precio: 75000, desc: "Glamurosas y Llenas de Gracia", img: "/frontend/imagenes/ramoFloresLila.png" },
+    { id: 22, nombre: "Ramo Flores Tonos Azules", precio: 85000, desc: "Increíblemente Frescas", img: "/frontend/imagenes/ramoFloresTonosAzules.png" }
+];

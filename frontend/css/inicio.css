@@ -1,0 +1,28 @@
+/* Paleta de colores */
+:root {
+    --blue-normal: #DEE2FF;
+    --red-normal-hover: #d9acb9;
+    --red-normal-active: #c199a4;
+    --purple-light: #E5DEEA;  /* Lila para el fondo del ramo */
+    --purple-normal: #aa94ba; /* Morado para títulos de los cards */
+    --purple-normal-hover: #9985a7;
+    --purple-normal-active: #887695;
+    --purple-dark: #4c4354;   /* Morado oscuro para precio */
+    --red-normal: #f1bfcd;
+    --red-light-active: #fbebf0;   
+    --white-normal: #ffefe7;    /* Beige claro para la card */
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at center, #DEE2FF 0%, #AA94BA 100%);
+    height: 100vh;
+    color: var(--purple-dark);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
