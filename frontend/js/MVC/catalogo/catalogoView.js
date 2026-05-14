@@ -4,7 +4,7 @@ export const catalogoView = {
     labelPrecio: document.getElementById('valorPrecio'),
 
     renderizarProductos(productos) {
-        this.contenedor.innerHTML = ''; // Limpiar catálogo
+        this.contenedor.innerHTML = ''; 
         productos.forEach(prod => {
             const card = `
                 <div class="col-12 col-md-4 col-lg-3 item-producto">

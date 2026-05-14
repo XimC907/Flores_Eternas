@@ -1,6 +1,6 @@
 export const carritoModel = {
     obtenerProductos() {
-        // Obtenemos los datos que guardamos previamente con el catalogoController
+        // Obtener datos que se guardaron con el catalogoController
         return JSON.parse(localStorage.getItem('carrito')) || [];
     },
 

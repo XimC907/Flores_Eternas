@@ -1,0 +1,111 @@
+:root {
+    --blue-normal-active: #b2b5cc;
+    --blue-normal-hover: #c8cbe6;
+    --blue-normal: #DEE2FF;
+    --red-normal-hover: #d9acb9;
+    --red-normal-active: #c199a4;
+    --purple-light: #E5DEEA;  
+    --purple-normal: #aa94ba; 
+    --purple-normal-hover: #9985a7;
+    --purple-normal-active: #887695;
+    --purple-dark: #4c4354;  
+    --red-normal: #f1bfcd;
+    --red-light-active: #fbebf0;   
+    --white-normal: #ffefe7;   
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at center, var(--blue-normal) 0%, var(--purple-normal) 100%);
+    height: 100vh;
+    color: var(--purple-dark);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+.contenedor-pago-central {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+}
+
+.pago-card {
+    background: var(--white-normal);
+    padding: 30px;
+    margin: 50px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(170, 148, 186, 0.2); 
+    border: 1px solid var(--white-normal); 
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    color: var(--purple-normal);
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-label {
+    color: var(--purple-dark); 
+    font-weight: 500;
+}
+
+.custom-input {
+    border-radius: 12px;
+    border: 1px solid var(--blue-normal);
+    padding: 12px;
+}
+
+.custom-input:focus {
+    border-color: var(--blue-normal-hover); 
+    box-shadow: 0 0 0 0.25rem rgba(241, 191, 205, 0.25);
+    outline: none;
+}
+
+.form-text{
+    color: var(--purple-normal-active);
+    font-weight: bold;
+    text-align: center;
+}
+
+.resumen-pago {
+    background-color: var(--blue-normal); 
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.btn-comprar-final {
+    background: linear-gradient(90deg, var(--purple-normal) 0%, var(--red-normal) 100%); 
+    color: var(--white-normal);
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-comprar-final:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(241, 191, 205, 0.4);
+    filter: brightness(1.05);
+}
+
+.link-volver {
+    color: var(--purple-normal-hover); 
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.link-volver:hover {
+    color: var(--purple-normal);
+}

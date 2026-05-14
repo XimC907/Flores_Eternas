@@ -1,4 +1,3 @@
-// js/productos.js
 export const listaProductos = [
     { id: 1, nombre: "Rosa Amarilla", precio: 16000, desc: "Cálido y lleno de vida", img: "/frontend/imagenes/rosaAmarillita.png" },
     { id: 2, nombre: "Rosa Roja", precio: 16000, desc: "Sentimental y Novelesco", img: "/frontend/imagenes/rosaRoja.png" },
@@ -21,5 +20,8 @@ export const listaProductos = [
     { id: 19, nombre: "Ramo Especial Flores Moradas Doradas", precio: 110000, desc: "Hermosas y Selectas", img: "/frontend/imagenes/ramoFloresMoradasDoradas.png" },
     { id: 20, nombre: "Ramo Rosas Rojas", precio: 75000, desc: "Tradicionales Amor Puro y Vivo", img: "/frontend/imagenes/ramoRosasRojas.png" },
     { id: 21, nombre: "Ramo Flores Lila", precio: 75000, desc: "Glamurosas y Llenas de Gracia", img: "/frontend/imagenes/ramoFloresLila.png" },
-    { id: 22, nombre: "Ramo Flores Tonos Azules", precio: 85000, desc: "Increíblemente Frescas", img: "/frontend/imagenes/ramoFloresTonosAzules.png" }
+    { id: 22, nombre: "Ramo Rosas Lilas Moradas", precio: 38000, desc: "Sencillas y Memorables", img: "/frontend/imagenes/ramoRosasLilasMoradas.png" },
+    { id: 24, nombre: "Ramo Flores Rosadas Doradas", precio: 80000, desc: "Llamativas y Glamurosas", img: "/frontend/imagenes/ramoFloresRosadasDoradas.png"},
+    { id: 25, nombre: "Ramo Flores Tonos Azules", precio: 38000, desc: "Únicas y Vistosas", img: "/frontend/imagenes/ramoFloresAzulesBlancas.png" }
+    
 ];

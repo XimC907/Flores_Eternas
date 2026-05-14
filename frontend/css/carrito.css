@@ -1,5 +1,7 @@
 /* Paleta de colores */
 :root {
+    --blue-normal-active: #b2b5cc;
+    --blue-normal-hover: #c8cbe6;
     --blue-normal: #DEE2FF;
     --red-normal-hover: #d9acb9;
     --red-normal-active: #c199a4;
@@ -21,3 +23,99 @@ body {
     color: var(--purple-dark);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+h2{
+    text-align: center;
+    color: var(--white-normal);
+    text-shadow: 0 0 10px var(--red-normal-active);
+    top: 5px;
+}
+
+/* Son los contenedores de cada producto que está añadido al carrito */
+.p-3{
+    background-color: var(--white-normal);
+    width: 50%;
+    left: 25%;
+}
+
+.fw-bold{
+    color: var(--purple-dark);
+}
+
+h5{
+    color: var(--purple-normal-active);
+}
+
+.text-muted{
+    color: var(--purple-normal-hover);
+}
+
+.btn-eliminar {
+    background-color: var(--purple-light);
+    color: var(--purple-dark);
+    font-weight: bold;
+    border: 1px solid var(--purple-normal-active);
+    border-radius: 15px;
+    transition: all 0.2s;
+}
+
+.btn-eliminar:hover {
+    background-color: var(--red-light-active);
+    color: var(--purple-dark);
+}
+
+.btn-lg {
+    background: linear-gradient(90deg, var(--red-normal-hover) 0%, var(--red-normal) 100%); 
+    color: var(--purple-dark);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(241, 191, 205, 0.3);
+}
+
+.btn-lg:hover {
+    background-color: var(--red-normal-hover);
+    color: var(--purple-normal-hover);
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+    box-shadow: 0 6px 20px rgba(241, 191, 205, 0.4);
+}
+
+.btn-lg:active,
+.btn-lg:focus{
+    background-color: var(--red-normal-hover)!important;
+    color: var(--purple-normal-hover)!important;
+}
+
+.btn-mas{
+    background-color: var(--purple-normal-active);
+    color: var(--white-normal);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(241, 191, 205, 0.3);
+}
+
+.btn-mas:hover{
+    background-color: var(--purple-normal-hover);
+    color: var(--purple-light);
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+    box-shadow: 0 6px 20px rgba(241, 191, 205, 0.4);
+}
+
+.btn-mas:active,
+.btn-mas:focus{
+    background-color: var(--purple-normal-hover)!important;
+    color: var(--purple-light)!important;
+}
+
+#total-carrito{
+    color: var(--purple-normal-active);
+}
+
