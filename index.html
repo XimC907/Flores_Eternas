@@ -1,20 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flores Eternas Nicore | Belleza que perdura</title>
     <link rel="stylesheet" href="./frontend/css/inicio.css">
-    <link rel="shortcut icon" href="/frontend/imagenes/logoNicore.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/frontend/imagenes/nicorelogo.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <main-navbar></main-navbar>
     <script src="components/navbar.js"></script>
 
-    <main style="flex: 1;">
-        
-    </main>
-    
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">El arte de regalar recuerdos que no caducan</span>
+            <h1>Flores Eternas Nicore</h1>
+            <p>Diseñamos símbolos de afecto eterno. Mediante el uso experto de cinta de seda y limpiapipas, moldeamos a
+                mano cada pétalo para ofrecerte una pieza de artesanía única que ignora el paso del tiempo.
+            </p>
+            <div class="hero-btns">
+                <a href="./frontend/html/catalogo.html" class="btn-primary">Ver Catálogo</a>
+
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="circle-img">
+                <img src="./frontend/imagenes/floresrosaslore.png" alt="Ramo Eterno">
+            </div>
+        </div>
+    </header>
+    <section class="about-section container">
+        <div class="about-grid">
+            <div class="about-image-wrapper">
+                <div class="logo-circle">
+                    <img src="./frontend/imagenes/nicorelogo.png" alt="Flores Nicore Logo">
+                </div>
+            </div>
+            <div class="about-content">
+                <h2>Sobre Nosotros</h2>
+                <p>En <strong>Flores Nicore</strong> Inmortaliza tus sentimientos con arte que nunca muere
+                    ¿Por qué conformarte con flores que se desvanecen en días? desafiamos lo efímero.
+                    Transformamos materiales como el chenille y telas de alta gama en obras maestras artesanales
+                    diseñadas para resistir el paso del tiempo.
+
+                <p> <strong>Cero mantenimiento:</strong> Olvida el agua; nuestras creaciones conservan su esplendor
+                    intacto para siempre.</p>
+                <p><strong>Exclusividad en cada pétalo:</strong> Cada pieza es única, fabricada a mano con una devoción
+                    que convierte un
+                    simple detalle en un regalo eterno y profundamente significativo.</p>
+                <p>No regales algo que se marchite; regala un recuerdo que dure toda la vida.
+                </p>
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- carrusel -->
+    <section class="gallery-section container">
+        <div class="section-header">
+            <h2 class="section-title">Inspiración Floral</h2>
+            <p class="section-subtitle">Momentos capturados para siempre en nuestras creaciones</p>
+        </div>
+
+        <div class="carousel-wrapper">
+            <button class="carousel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+
+            <div class="carousel-container" id="carousel">
+                <div class="carousel-item">
+                    <img src="./frontend/imagenes/ramorosalore.png"
+                        alt="Ramo de cinta rosa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./frontend/imagenes/ramoFloresMoradasDoradas.png"
+                        alt="Rosas de cinta detalladas">
+                </div>
+                <div class="carousel-item">
+                    <img src="./frontend/imagenes/Ramoazullore.png"
+                        alt="Tulipanes de limpiapipas">
+                </div>
+                <div class="carousel-item">
+                    <img src="./frontend/imagenes/Ramolilalore.png"
+                        alt="Girasol artesanal">
+                </div>
+                <div class="carousel-item">
+                    <img src="./frontend/imagenes/ramoRosasNegrasDoradas.png"
+                        alt="Arreglo floral pastel">
+                </div>
+                <div class="carousel-item">
+                    <img src="./frontend/imagenes/corazonRosasRojas.png"
+                        alt="Lirios eternos">
+                </div>
+                <div class="carousel-item">
+                    <img src="./frontend/imagenes/ramoRosasAmarillas.png"
+                        alt="Caja de regalo floral">
+                </div>
+            </div>
+
+            <button class="carousel-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+    <!-- Productos mas vendidos -->
+    <section class="best-sellers container">
+        <div class="section-header">
+            <h2 class="section-title">Nuestros Más Vendidos</h2>
+            <p class="section-subtitle">Las flores favoritas de nuestra comunidad</p>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./frontend/imagenes/lili.png" alt="Girasol Eterno">
+                    <span class="tag-popular">Popular</span>
+                </div>
+                <div class="product-info">
+                    <h3>Lirios Eternos</h3>
+                    <p>Brillo y elegancia que nunca se apaga.</p>
+                    <span class="price">Desde $25.000</span>
+                    <a href="./frontend/html/catalogo.html" class="btn-card">Lo quiero</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./frontend/imagenes/tulipan_pipas.png" alt="Tulipanes Eternos">
+                </div>
+                <div class="product-info">
+                    <h3>Tulipanes</h3>
+                    <p>Elegancia en limpiapipas de colores.</p>
+                    <span class="price">Desde $16.000</span>
+                    <a href="./frontend/html/catalogo.html" class="btn-card">Lo quiero</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./frontend/imagenes/ramomoradolore.png" alt="Ramo Mixto">
+                </div>
+                <div class="product-info">
+                    <h3>Ramos </h3>
+                    <p>Combinación de cintas y texturas.</p>
+                    <span class="price">Desde $55.000</span>
+                    <a href="./frontend/html/catalogo.html" class="btn-card">Lo quiero</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./frontend/imagenes/florrosalore.png" alt="Rosa de Cinta">
+                </div>
+                <div class="product-info">
+                    <h3>Rosas de Satín</h3>
+                    <p>Textura suave y brillo permanente.</p>
+                    <span class="price">Desde $15.000</span>
+                    <a href="./frontend/html/catalogo.html" class="btn-card">Lo quiero</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process-section container">
+        <h2 class="section-title">Nuestro Proceso Creativo</h2>
+
+
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-icon-bg" style="background-color: #FFEFE7;">🎨</div>
+                <h4>1. Diseño</h4>
+                <p>Seleccionamos colores y diseños según tu pedido o nuestras creaciones exclusivas.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon-bg" style="background-color: #DEE2FF;">✍️</div>
+                <h4>2. Moldeado</h4>
+                <p>Cada pétalo se moldea a mano con limpiapipas, dándole forma y vida.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon-bg" style="background-color: #fdf2f5;">🌸</div>
+                <h4>3. Ensamblaje</h4>
+                <p>Unimos pétalos, tallos y hojas para crear flores realistas y hermosas.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon-bg" style="background-color: #e8f5e9;">🎁</div>
+                <h4>4. Empaque</h4>
+                <p>Envolvemos con amor cada creación para que llegue perfecta a tus manos.</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="features container">
+        <div class="feature-card">
+            <i class="fa-solid fa-hands-bubbles"></i>
+            <h3>100% Artesanal</h3>
+            <p>Cada pétalo es moldeado a mano con dedicación única.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-infinity"></i>
+            <h3>Larga Duración</h3>
+            <p>Materiales premium que mantienen su color por años.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Envíos Seguros</h3>
+            <p>Entregas a domicilio con empaque protector de regalo.</p>
+        </div>
+    </section>
+
+    <!-- PREGUNTAS -->
+    <section class="faq-section container">
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <p class="section-subtitle">Todo lo que necesitas saber sobre nuestras flores</p>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿De qué materiales están hechas las flores?
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Nuestras flores son 100% artesanales. Utilizamos <strong>limpiapipas (chenille)</strong> de alta
+                        calidad para un acabado aterciopelado, además de <strong>cintas de raso y telas premium</strong>
+                        para lograr pétalos con brillo y texturas realistas que no se marchitan.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Cuánto tiempo duran estas flores?
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>¡Duran para siempre! Al ser materiales textiles y sintéticos resistentes, mantienen su forma y
+                        color por años. Son el regalo perfecto porque, a diferencia de las naturales, este detalle
+                        conserva su belleza indefinidamente.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Puedo solicitar un diseño personalizado?
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>¡Claro que sí! Podemos personalizar el tipo de flor, el tamaño del ramo y la combinación de
+                        colores según tu preferencia o la ocasión especial que desees celebrar.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Cuál es el tiempo de entrega?
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Debido a que cada flor se moldea a mano pétalo por pétalo, el tiempo de elaboración suele ser de
+                        3 a 5 días hábiles, más el tiempo de envío dependiendo de tu ubicación.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Realizan envíos a domicilio?
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Sí, realizamos envíos seguros. Cada ramo se empaca con materiales protectores especiales para
+                        asegurar que tus flores lleguen impecables y listas para regalar a su destino.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <main-footer></main-footer>
     <script src="components/footer.js"></script>
     <!--Para que aparezcan los iconos de las redes sociales en el footer-->
@@ -22,6 +286,8 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script type="module" src="./frontend/js/MVC/main.js"></script>
-    
+    <script src="./components/inicio.js"></script>
+
 </body>
+
 </html>

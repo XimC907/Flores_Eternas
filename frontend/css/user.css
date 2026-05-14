@@ -1,0 +1,139 @@
+:root {
+    --morado-soft: #AA94BA;
+    --rosa-pastel: #F1BFCD;
+    --fondo-card: #ffffff;
+}
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #FFEFE7 0%, #DEE2FF 100%);
+    padding: 20px;
+}
+
+.login-card {
+    background: var(--fondo-card);
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Panel Izquierdo */
+.login-image {
+    flex: 1;
+    background-color: #fdf2f5;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.login-image img {
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+/* Formulario */
+.login-form-container {
+    flex: 1.2;
+    padding: 50px;
+}
+
+.login-form-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #4A4A4A;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: var(--morado-soft);
+    outline: none;
+    box-shadow: 0 0 10px rgba(170, 148, 186, 0.2);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background: var(--morado-soft);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #937eaa;
+    transform: translateY(-2px);
+}
+
+/* Botón Google */
+.btn-google {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-google:hover {
+    background: #f8f8f8;
+}
+
+.divider {
+    text-align: center;
+    margin: 25px 0;
+    position: relative;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 50%; left: 0; width: 100%; height: 1px;
+    background: #eee; z-index: 1;
+}
+
+.divider span {
+    background: white;
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+    color: #999;
+    font-size: 0.8rem;
+}

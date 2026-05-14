@@ -9,7 +9,7 @@
     --purple-normal-active: #887695;
     --purple-dark: #4c4354;   /* Morado oscuro para precio */
     --red-normal: #f1bfcd;
-    --red-light-active: #fbebf0;   
+    --red-light-active: #fbebf0;
     --white-normal: #ffefe7;    /* Beige claro para la card */
 }
 
@@ -25,4 +25,589 @@ body {
     height: 100vh;
     color: var(--purple-dark);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+    --morado: #AA94BA;
+    --rosa-fondo: #FFEFE7;
+    --azul-claro: #DEE2FF;
+    --rosa-letra: #F1BFCD;
+    --texto-oscuro: #4A4A4A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: var(--texto-oscuro);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* HERO */
+.hero {
+    background-color: var(--rosa-fondo);
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.badge {
+    background: var(--azul-claro);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--morado);
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: var(--morado);
+    margin: 20px 0;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* BOTONES */
+.btn-primary {
+    background-color: var(--morado);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.btn-secondary {
+    border: 2px solid var(--morado);
+    color: var(--morado);
+    padding: 13px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.btn-primary:hover { transform: translateY(-3px); }
+
+/* IMAGEN HERO CIRCULAR */
+.circle-img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 15px solid white;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.circle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FEATURES */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.feature-card {
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    border-bottom: 5px solid var(--azul-claro);
+    transition: 0.3s;
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: var(--rosa-letra);
+    margin-bottom: 20px;
+}
+
+/* PROCESO */
+.process { background-color: #fafafa; border-radius: 50px; text-align: center; }
+.process-steps {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.step-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 20px;
+}
+
+/* CONTACTO */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    background: var(--azul-claro);
+    padding: 60px;
+    border-radius: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-family: inherit;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    color: var(--morado);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .circle-img { width: 300px; height: 300px; }
+}
+/* Estilos para la sección Sobre Nosotros */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.logo-circle {
+    height: 445px;
+    width: 455px;
+    background: rgba(227, 164, 252, 0.479);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 30px rgba(150, 163, 235, 0.884);
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #4A4A4A;
+    margin-bottom: 25px;
+
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.about-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number, .stat-icon {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #AA94BA; /* Tu color morado */
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+}
+
+/* Estilos para el Proceso (Línea de pasos) */
+.process-section {
+    text-align: center;
+    background-color: #fff9fb; /* Fondo muy suave */
+    border-radius: 40px;
+    padding: 80px 20px;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.step-icon-bg {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 20px;
+}
+
+.step h4 {
+    margin-bottom: 10px;
+    color: #4A4A4A;
+}
+
+.step p {
+    font-size: 0.9rem;
+    color: #777;
+    padding: 0 10px;
+}
+
+.about-grid  {
+     padding: 40px;
+    background: white;
+    border-radius: 20px;
+    border-bottom: 5px solid var(--azul-claro);
+    transition: 0.3s;
+}
+/* productos mas vendidos */
+
+
+
+
+/* --- SECCIÓN MÁS VENDIDOS --- */
+.best-sellers {
+    padding: 80px 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+    text-shadow: #8f3acc;
+    text-align: center;
+}
+
+.section-subtitle {
+    color: #8e7d9b; /* Tu morado */
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* GRID DE PRODUCTOS */
+.product-grid {
+   display: flex;             /* Activa el alineamiento en fila */
+    flex-wrap: wrap;           /* Permite que bajen si no caben, pero intentará estar al lado */
+    gap: 20px;                 /* Espacio entre tarjetas */
+    justify-content: center;   /* Centra los productos si sobran espacios */
+    width: 100%;
+    max-width: 1200px;         /* Limita el ancho para que no se estiren demasiado */
+    margin: 0 auto;
+}
+
+/* TARJETA DE PRODUCTO */
+.product-card {
+    flex: 1 1 calc(25% - 20px); /* Esto obliga a que cada tarjeta ocupe el 25% (un cuarto) de la fila */
+    min-width: 250px;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #FFEFE7; /* Tu rosa suave */
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(170, 148, 186, 0.2); /* Sombra morada suave */
+}
+
+/* IMAGEN DEL PRODUCTO */
+.product-image {
+    position: relative;
+    height: 280px;
+    background-color: #f6e4f7; /* Fondo lila suave para la imagen */
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.1);
+}
+
+.tag-popular {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #F1BFCD; /* Tu rosa de letra */
+    color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+/* INFORMACIÓN DEL PRODUCTO */
+.product-info {
+    padding: 25px;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 1.4rem;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.price {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #AA94BA;
+    margin-bottom: 20px;
+}
+
+.btn-card {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 2px solid #AA94BA;
+    color: #AA94BA;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-card:hover {
+    background-color: #AA94BA;
+    color: white;
+}
+/* Responsivo: Si la pantalla es pequeña (celulares), se ponen uno encima de otro */
+@media (max-width: 768px) {
+    .product-card {
+        flex: 1 1 100%; /* Ocupan todo el ancho en celular */
+    }
+}
+
+/* preguntas frecuentes */
+/* --- SECCIÓN FAQ --- */
+.faq-section {
+    padding: 80px 20px;
+    background-color: #ffffff; /* Fondo blanco tipo tarjeta */
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    margin-bottom: 60px;
+}
+
+.faq-container {
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.faq-item {
+    border-bottom: 1px solid #DEE2FF; /* Tu azul claro para separar */
+    padding: 10px 0;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4A4A4A;
+    cursor: pointer;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #AA94BA; /* Tu morado al pasar el mouse */
+}
+
+.faq-question i {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+    color: #F1BFCD; /* Tu rosa de letra */
+}
+
+/* Respuesta oculta por defecto */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 20px;
+}
+
+.faq-answer p {
+    padding-bottom: 20px;
+    color: #777;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Clase para abrir el acordeón (se activa con JS) */
+.faq-item.active .faq-answer {
+    max-height: 200px; /* Ajusta según el largo del texto */
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(45deg); /* Cambia el + por una x */
+    color: #AA94BA;
+}
+/* carrusel */
+/* --- SECCIÓN CARRUSEL --- */
+.gallery-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 1200px;
+}
+
+.carousel-wrapper {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden; /* Oculta lo que sobra */
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.carousel-item {
+    flex: 0 0 calc(33.33% - 15px); /* Muestra 3 imágenes a la vez en PC */
+    height: 350px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(158, 39, 39, 0.05);
+    border: 5px solid var(--rosa-fondo);
+    background-color:#f6e4f7cc;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Botones de Navegación */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--morado);
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(86, 23, 131, 0.4);
+}
+
+.carousel-btn:hover {
+    background: var(--rosa-letra);
+}
+
+.carousel-btn.prev { left: -25px; }
+.carousel-btn.next { right: -25px; }
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .carousel-item {
+        flex: 0 0 calc(80% - 10px); /* Muestra casi una imagen entera en celular */
+    }
+    .carousel-btn {
+        display: none; /* En celular es mejor deslizar con el dedo */
+    }
+    .carousel-container {
+        overflow-x: auto; /* Permite scroll táctil */
+    }
 }

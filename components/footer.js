@@ -133,7 +133,7 @@ class Footer extends HTMLElement {
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-section brand-col">
-                    <img src="/frontend/imagenes/logoNicore.png" alt="Logo" class="footer-logo">
+                    <img src="/frontend/imagenes/nicorelogo.png" alt="Logo" class="footer-logo">
                     <p class="lema">Flores eternas hechas con amor y dedicación</p>
                 </div>
 

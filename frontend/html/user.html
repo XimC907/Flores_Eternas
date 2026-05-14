@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+    <div class="login-page">
+    <div class="login-card">
+        <div class="login-image">
+            <img src="../imagenes/nicorelogo.png" alt="Flores Eternas">
+            <h3>Bienvenida de nuevo</h3>
+            <p>Tus flores favoritas te están esperando.</p>
+        </div>
+
+        <div class="login-form-container">
+            <h2>Iniciar Sesión</h2>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" id="userEmail" placeholder="tu@correo.com" required>
+                </div>
+                
+                <div class="input-group">
+                    <label>Contraseña</label>
+                    <input type="password" id="userPass" placeholder="••••••••" required>
+                </div>
+
+                <div class="form-options">
+                    <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a>
+                </div>
+                <br>
+
+                <button type="submit" class="btn-login">Entrar</button>
+            </form>
+
+            <div class="divider">
+                <span>o continúa con</span>
+            </div>
+
+            <button class="btn-google" id="googleBtn">
+                <img src="../imagenes/gogli.png" alt="Google">
+                Iniciar sesión con Google
+            </button>
+
+            <p class="register-text">¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+        </div>
+    </div>
+</div>
+<script src="../js/user.js"></script>
+    
+</body>
+</html>
