@@ -149,7 +149,7 @@ class Footer extends HTMLElement {
                     <ul class="social-icons">
                         <li><a href="#" class="icon"><ion-icon name="logo-instagram"></ion-icon></a></li>
                         <li><a href="#" class="icon"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li><a href="#" class="icon"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                        <li><a href="" class="icon"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
                     </ul>
                 </div>
             </div>
@@ -157,8 +157,8 @@ class Footer extends HTMLElement {
             <div class="footer-bottom">
                 <ul class="bottom-menu">
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Tipos de flores</a></li>
-                    <li><a href="#">Carrito</a></li>
+                    <li><a href="/frontend/html/tipos-flores.html">Tipos de flores</a></li>
+                    <li><a href="/frontend/html/carrito.html">Carrito</a></li>
                 </ul>
                 <p class="copyright">© 2026 Nicore | Diseñado con fines académicos</p>
             </div>

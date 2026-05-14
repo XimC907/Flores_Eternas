@@ -185,7 +185,7 @@ class Navbar extends HTMLElement {
                     <span>Carrito</span>
                 </a>
             </li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="/frontend/html/contacto.html">Contacto</a></li>
           </ul>
 
           <div style="display: flex; align-items: center;">
