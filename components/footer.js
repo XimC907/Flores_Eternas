@@ -149,7 +149,7 @@ class Footer extends HTMLElement {
                     <ul class="social-icons">
                         <li><a href="#" class="icon"><ion-icon name="logo-instagram"></ion-icon></a></li>
                         <li><a href="#" class="icon"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li><a href="" class="icon"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                        <li><a href="https://wa.me/573206104806?text=Hola,%20quiero%20hacer%20un%20pedido" target="_blank" class="icon"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
                     </ul>
                 </div>
             </div>
