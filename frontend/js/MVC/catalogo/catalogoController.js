@@ -2,7 +2,10 @@ import { catalogoModel } from './catalogoModel.js';
 import { catalogoView } from './catalogoView.js';
 
 const catalogoController = {
-    init() {
+   async init() {
+        // Espera a que el modelo traiga la info desde la BD
+        await catalogoModel.cargarProductosDesdeBD();
+
         // Muestra todos los productos al iniciar
         catalogoView.renderizarProductos(catalogoModel.productos);
 
@@ -34,7 +37,7 @@ const catalogoController = {
             carrito.push(producto);
             localStorage.setItem('carrito', JSON.stringify(carrito));
 
-            const respuesta = confirm(`¡${producto.nombre} añadido! 💐\n\n¿Quieres ir al carrito para finalizar tu compra?`);
+            const respuesta = confirm(`¡${producto.nombre} añadido!\n\n¿Quieres ir al carrito para finalizar tu compra?`);
 
             if (respuesta) {
                 window.location.href = "carrito.html";

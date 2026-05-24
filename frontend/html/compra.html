@@ -27,23 +27,7 @@
                     </select>
                 </div><br>
 
-                <div class="mb-4">
-                    <label for="claveDinamica" class="form-label">Clave Dinámica o de Seguridad</label>
-                    <input type="password" class="form-control custom-input" id="claveDinamica" placeholder="Ingrese su clave" required><br><br>
-                    <div class="form-text">¡Nunca compartas tu clave con nadie!</div>
-                </div>
-
-                <div class="resumen-pago mb-4">
-                    <div class="d-flex justify-content-between">
-                        <span>Subtotal:</span>
-                        <span id="resumen-subtotal">$0</span>
-                    </div>
-                    <hr>
-                    <div class="d-flex justify-content-between fw-bold">
-                        <span>Total a Pagar:</span>
-                        <span id="resumen-total">$0</span>
-                    </div>
-                </div>
+                
 
                 <button type="submit" class="btn-comprar-final">Confirmar Compra</button>
             </form>
@@ -59,6 +43,9 @@
     <!--Para que aparezcan los iconos de las redes sociales en el footer-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Controlador de la compra -->
+    <script type="module" src="/frontend/js/MVC/compra/compraController.js"></script>
 </body>
 
 </html>
