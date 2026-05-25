@@ -149,11 +149,7 @@ class Footer extends HTMLElement {
                     <ul class="social-icons">
                         <li><a target="_blank" href="https://www.instagram.com/floreseternasnicore?igsh=MWJ6M2pxaTF2Y3k5cQ==" class="icon"><ion-icon name="logo-instagram"></ion-icon></a></li>
                         <li><a href="#" class="icon"><ion-icon name="logo-facebook"></ion-icon></a></li>
-<<<<<<< HEAD
                         <li><a href="https://wa.me/573206104806?text=Hola,%20quiero%20hacer%20un%20pedido" target="_blank" class="icon"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-=======
-                        <li><a href="#" class="icon"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
->>>>>>> Xim
                     </ul>
                 </div>
             </div>
