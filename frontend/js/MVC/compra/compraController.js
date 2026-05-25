@@ -12,7 +12,13 @@ document.getElementById("form-finalizar-compra").addEventListener("submit", asyn
     }
 
     // Simulación de usuario (como no hay login aún, se usa el 1 como ID de cliente por ahpra)
-    const clienteID = localStorage.getItem("clienteID") || 1; 
+    const clienteID = localStorage.getItem("clienteID"); 
+
+    if (!clienteID) {
+        alert("Debes iniciar sesión en la página de Login antes de proceder con el pago.");
+        window.location.href = "user.html"; // Redirecciona a la pantalla de la foto
+        return;
+    }
     
     // Capturar el método de pago seleccionado del select
     const metodoPago = document.getElementById("metodoPago").value;
@@ -22,8 +28,8 @@ document.getElementById("form-finalizar-compra").addEventListener("submit", asyn
         for (const producto of carrito) {
             
             const datosCompra = {
-                clienteID: parseInt(clienteID),
-                productoID: producto.id,
+                clienteID: clienteID,
+                productoID: parseInt(producto.id),
                 cantidad: 1, // Flujo básico: 1 unidad por ítem
                 metodoPago: metodoPago,
                 totalCompra: producto.precio 
@@ -37,7 +43,8 @@ document.getElementById("form-finalizar-compra").addEventListener("submit", asyn
             });
 
             if (!respuesta.ok) {
-                throw new Error("Hubo un problema al registrar uno de los productos.");
+                const msgError = await respuesta.text();
+                throw new Error(msgError);
             }
         }
 

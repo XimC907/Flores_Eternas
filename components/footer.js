@@ -147,9 +147,13 @@ class Footer extends HTMLElement {
                 <div class="footer-section social-col">
                     <h4>Síguenos</h4>
                     <ul class="social-icons">
-                        <li><a href="#" class="icon"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/floreseternasnicore?igsh=MWJ6M2pxaTF2Y3k5cQ==" class="icon"><ion-icon name="logo-instagram"></ion-icon></a></li>
                         <li><a href="#" class="icon"><ion-icon name="logo-facebook"></ion-icon></a></li>
+<<<<<<< HEAD
                         <li><a href="https://wa.me/573206104806?text=Hola,%20quiero%20hacer%20un%20pedido" target="_blank" class="icon"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+=======
+                        <li><a href="#" class="icon"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+>>>>>>> Xim
                     </ul>
                 </div>
             </div>
@@ -157,8 +161,8 @@ class Footer extends HTMLElement {
             <div class="footer-bottom">
                 <ul class="bottom-menu">
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="/frontend/html/tipos-flores.html">Tipos de flores</a></li>
-                    <li><a href="/frontend/html/carrito.html">Carrito</a></li>
+                    <li><a href="./frontend/html/tipos-flores.html">Tipos de flores</a></li>
+                    <li><a href="./frontend/html/carrito.html">Carrito</a></li>
                 </ul>
                 <p class="copyright">© 2026 Nicore | Diseñado con fines académicos</p>
             </div>
