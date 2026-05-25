@@ -171,21 +171,21 @@ class Navbar extends HTMLElement {
 
       <nav class="navbar">
         <div class="container">
-          <a href="./index.html" class="logo">
-            <img src="./frontend/imagenes/nicorelogo.png" alt="Logo" class="nav-logo-img">
+          <a href="/index.html" class="logo">
+            <img src="/frontend/imagenes/nicorelogo.png" alt="Logo" class="nav-logo-img">
           </a>
           
           <ul class="nav-links">
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./frontend/html/catalogo.html">Catálogo</a></li>
-            <li><a href="./frontend/html/tipos-flores.html">Tipos de Flores</a></li>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/frontend/html/catalogo.html">Catálogo</a></li>
+            <li><a href="/frontend/html/tipos-flores.html">Tipos de Flores</a></li>
             <li>
-                <a href="./frontend/html/carrito.html" class="carrito-container">
-                    <img src="./frontend/imagenes/carrito-de-compras.png" class="iconoCarrito" alt="Carrito">
+                <a href="/frontend/html/carrito.html" class="carrito-container">
+                    <img src="/frontend/imagenes/carrito-de-compras.png" class="iconoCarrito" alt="Carrito">
                     <span>Carrito</span>
                 </a>
             </li>
-            <li><a href="./frontend/html/contacto.html">Contacto</a></li>
+            <li><a href="/frontend/html/contacto.html">Contacto</a></li>
           </ul>
 
           <div style="display: flex; align-items: center;">
@@ -195,7 +195,7 @@ class Navbar extends HTMLElement {
             </form>
 
             <div class="user-menu">
-              <a href="./frontend/html/user.html" class="user-link">
+              <a href="/frontend/html/user.html" class="user-link">
                 <svg class="user-icon-svg" viewBox="0 0 24 24">
                   <path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M12,6c1.93,0,3.5,1.57,3.5,3.5S13.93,13,12,13 s-3.5-1.57-3.5-3.5S10.07,6,12,6z M12,20c-2.03,0-4.43-0.82-6.14-2.88C7.55,15.8,9.68,15,12,15s4.45,0.8,6.14,2.12 C16.43,19.18,14.03,20,12,20z"/>
                 </svg>

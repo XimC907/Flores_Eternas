@@ -133,7 +133,7 @@ class Footer extends HTMLElement {
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-section brand-col">
-                    <img src="./frontend/imagenes/nicorelogo.png" alt="Logo" class="footer-logo">
+                    <img src="/frontend/imagenes/nicorelogo.png" alt="Logo" class="footer-logo">
                     <p class="lema">Flores eternas hechas con amor y dedicación</p>
                 </div>
 
@@ -147,9 +147,9 @@ class Footer extends HTMLElement {
                 <div class="footer-section social-col">
                     <h4>Síguenos</h4>
                     <ul class="social-icons">
-                        <li><a href="#" class="icon"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/floreseternasnicore?igsh=MWJ6M2pxaTF2Y3k5cQ==" class="icon"><ion-icon name="logo-instagram"></ion-icon></a></li>
                         <li><a href="#" class="icon"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li><a href="" class="icon"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                        <li><a href="#" class="icon"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
                     </ul>
                 </div>
             </div>

@@ -24,7 +24,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
             // Guardamos el id del cliente en la memoria del navegador
             localStorage.setItem('clienteID', data.usuario.clienteID);
             // Redirige correctamente a tu tienda principal
-            window.location.href = "/Flores_Eternas/index.html";
+            window.location.href = "../../../index.html";
         } else {
             // 2. Si el servidor dice que no existe (Status 401), lo registramos como cliente nuevo
             alert("Usuario no encontrado en Nicore Flowers. Creando una cuenta nueva para ti...");
@@ -44,7 +44,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
                 
                 // Guardamos el nuevo ID y volvemos al inicio de la tienda
                 localStorage.setItem('clienteID', registroData.usuario.clienteID);
-                window.location.href = "/Flores_Eternas/index.html";
+                window.location.href = "../../../index.html";
             } else {
                 const errorText = await registroResponse.text();
                 alert("Error al intentar registrarse: " + errorText);
@@ -78,13 +78,12 @@ document.getElementById('googleBtn').addEventListener('click', async () => {
             body: JSON.stringify(usuarioGoogleSimulado)
         });
 
-        const data = await response.json();
-
         if (response.ok) {
+            const data = await response.json();
             alert(`¡Registro Exitoso vía Google! Guardado en SQL Server.\nBienvenido: ${data.usuario.nombre}`);
             localStorage.setItem('clienteID', data.usuario.clienteID);
             // Redirige correctamente a tu tienda principal
-            window.location.href = "/Flores_Eternas/index.html";
+            window.location.href = "../../../index.html";
         } else {
             alert("El servidor rechazó el registro de Google.");
         }
@@ -93,3 +92,4 @@ document.getElementById('googleBtn').addEventListener('click', async () => {
         alert("Error al intentar comunicarse con el servidor Node.js.");
     }
 });
+

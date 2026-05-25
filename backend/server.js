@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 const connectionString = 
-    "Driver={ODBC Driver 17 for SQL Server};Server=DESKTOP-2QOVEHJ\\SQLEXPRESS;Database=floresEternas;Trusted_Connection=yes;";
+    "Driver={ODBC Driver 17 for SQL Server};Server=LAPTOP-LPE1A15A\\SQLEXPRESS;Database=floresEternas;Trusted_Connection=yes;";
 
 // ==========================================
 // 1. RUTAS ORIGINALES (CATÁLOGO Y COMPRAS)
@@ -85,7 +85,7 @@ app.post("/api/login/tradicional", (req, res) => {
     });
 });
 
-/// Ruta para Registrar un Nuevo Cliente Tradicional (Formulario)
+// Ruta para Registrar un Nuevo Cliente Tradicional (Formulario)
 app.post("/api/registro/tradicional", (req, res) => {
     const { nombre, email, password } = req.body;
 
