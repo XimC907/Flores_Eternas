@@ -20,21 +20,107 @@
 
         <h2>Formulario de Contacto</h2>
 
-        <form id="miFormulario">
+        <form id="formulario">
 
+            <!-- Nombre -->
             <div class="campo">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" placeholder="Escribe tu nombre y apellido">
+                <input type="text" id="nombre" placeholder="Escribe tu nombre y apellido" required>
             </div>
 
+            <!-- Fecha de entrega -->
             <div class="campo">
-                <label for="correo">Correo</label>
-                <input type="email" id="correo" placeholder="Escribe tu correo">
+                <label for="fecha">Fecha de entrega</label>
+                <input type="date" id="fecha" required>
             </div>
 
+            <!-- Dirección de entrega -->
             <div class="campo">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                <label for="direccion">Dirección de entrega</label>
+                <input type="text" id="direccion" placeholder="Ejemplo: Calle principal #23" required>
+            </div>
+            
+            <!-- Hora de entrega -->
+            <div class="campo">
+                <label for="hora">Hora de entrega</label>
+                <select name="hora" id="hora" required>
+                    <option value="">Seleccione una hora</option>
+                </select>
+            </div>
+
+            <!-- Tamaño del ramo -->
+            <div class="campo">
+                <label for="tamano">Tamaño del ramo</label>
+                <select name="tamano" id="tamano" required>
+                    <option value="">Seleccione un tamaño</option>
+                    <option value="pequeño">Pequeño</option>
+                    <option value="mediano">Mediano</option>
+                    <option value="grande">Grande</option>
+                </select>
+            </div>
+
+            <!-- Ocasión -->
+            <div class="campo">
+                <label for="ocasion">Ocasión</label>
+                <select name="ocasion" id="ocasion" required>
+                    <option value="">Seleccione una ocasión</option>
+                    <option value="cumpleaños">Cumpleaños</option>
+                    <option value="aniversario">Aniversario</option>
+                    <option value="amor y amistad">Amor y amistad</option>
+                    <option value="graduacion">Graduación</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <!-- Complemento -->
+            <div class="campo">
+
+                <label>Complementos</label>
+
+                <details class="select-multiple" id="complemento">
+
+                <summary>
+                    Selecciona complementos
+                </summary>
+
+                <label>
+                    <input type="checkbox" name="complemento" value="Dulces y Chocolates">
+                        Dulces y Chocolates
+                </label>
+
+                <label>
+                    <input type="checkbox" name="complemento" value="Peluches">
+                        Peluches
+                </label>
+
+                <label>
+                    <input type="checkbox" name="complemento" value="Globos">
+                        Globos
+                </label>
+
+                <label>
+                    <input type="checkbox" name="complemento" value="Joyería o Perfumes">
+                        Joyería o Perfumes
+                </label>
+
+                <label>
+                    <input type="checkbox" name="complemento" value="Bebidas">
+                        Bebidas
+                </label>
+
+                <label>
+                    <input type="checkbox" name="complemento" value="Sobres y Tarjetas">
+                        Sobres y Tarjetas
+                </label>
+
+                </details>
+
+            </div>
+
+            <!-- Mensaje -->
+            <div class="campo">
+                <label for="mensaje">¿Qué más deseas agregar?</label>
+                <textarea id="mensaje" placeholder="Describe lo que desees añadir" rows="4" required></textarea>
             </div>
 
             <button type="submit">Enviar</button>
