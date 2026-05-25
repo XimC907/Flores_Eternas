@@ -133,7 +133,7 @@ class Footer extends HTMLElement {
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-section brand-col">
-                    <img src="/frontend/imagenes/nicorelogo.png" alt="Logo" class="footer-logo">
+                    <img src="./frontend/imagenes/nicorelogo.png" alt="Logo" class="footer-logo">
                     <p class="lema">Flores eternas hechas con amor y dedicación</p>
                 </div>
 
@@ -157,8 +157,8 @@ class Footer extends HTMLElement {
             <div class="footer-bottom">
                 <ul class="bottom-menu">
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="/frontend/html/tipos-flores.html">Tipos de flores</a></li>
-                    <li><a href="/frontend/html/carrito.html">Carrito</a></li>
+                    <li><a href="./frontend/html/tipos-flores.html">Tipos de flores</a></li>
+                    <li><a href="./frontend/html/carrito.html">Carrito</a></li>
                 </ul>
                 <p class="copyright">© 2026 Nicore | Diseñado con fines académicos</p>
             </div>

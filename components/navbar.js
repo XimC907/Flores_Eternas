@@ -171,21 +171,21 @@ class Navbar extends HTMLElement {
 
       <nav class="navbar">
         <div class="container">
-          <a href="/index.html" class="logo">
-            <img src="/frontend/imagenes/nicorelogo.png" alt="Logo" class="nav-logo-img">
+          <a href="./index.html" class="logo">
+            <img src="./frontend/imagenes/nicorelogo.png" alt="Logo" class="nav-logo-img">
           </a>
           
           <ul class="nav-links">
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/frontend/html/catalogo.html">Catálogo</a></li>
-            <li><a href="/frontend/html/tipos-flores.html">Tipos de Flores</a></li>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./frontend/html/catalogo.html">Catálogo</a></li>
+            <li><a href="./frontend/html/tipos-flores.html">Tipos de Flores</a></li>
             <li>
-                <a href="/frontend/html/carrito.html" class="carrito-container">
-                    <img src="/frontend/imagenes/carrito-de-compras.png" class="iconoCarrito" alt="Carrito">
+                <a href="./frontend/html/carrito.html" class="carrito-container">
+                    <img src="./frontend/imagenes/carrito-de-compras.png" class="iconoCarrito" alt="Carrito">
                     <span>Carrito</span>
                 </a>
             </li>
-            <li><a href="/frontend/html/contacto.html">Contacto</a></li>
+            <li><a href="./frontend/html/contacto.html">Contacto</a></li>
           </ul>
 
           <div style="display: flex; align-items: center;">
