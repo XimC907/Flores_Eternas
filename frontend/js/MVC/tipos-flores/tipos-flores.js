@@ -13,7 +13,7 @@ function cambiarVista(
     document.getElementById(idImagen).src =
     nuevaImagen;
 
-    // Guardar SOLO el color actual visualizado
+    // Guardar solo el color actual visualizado
     coloresActuales[nombreFlor] = color;
 
 }
@@ -31,7 +31,7 @@ function agregarFlor(nombreFlor){
 
     }
 
-    // Crear array si no existe
+    // Crea una estructura para guardar varios valores en una variable si no existe
     if(!floresSeleccionadas[nombreFlor]){
 
         floresSeleccionadas[nombreFlor] = [];
@@ -53,6 +53,7 @@ function agregarFlor(nombreFlor){
 
 }
 
+// Lleva al formulario con la información de las flores seleccionadas
 function irAlFormulario(){
 
     localStorage.setItem(

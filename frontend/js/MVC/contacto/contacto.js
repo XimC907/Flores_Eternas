@@ -1,3 +1,5 @@
+
+// Crea una lista de horarios disponibles y muestra en el form
 const horariosDisponibles = [
     "8:00AM",
     "9:00AM",
@@ -11,6 +13,7 @@ const horariosDisponibles = [
     "5:00PM"
 ];
 
+// Se crean como una opción que el usuario pueda escoger la hora
 const selectHora = document.getElementById("hora");
 
 horariosDisponibles.forEach(hora => {
@@ -23,6 +26,7 @@ horariosDisponibles.forEach(hora => {
 
 });
 
+// Obtiene la fecha actual y evita seleccionar pasadas
 const fechaInput = document.getElementById("fecha");
 
 const hoy = new Date().toISOString().split("T")[0];
@@ -33,6 +37,7 @@ document.getElementById("formulario").addEventListener("submit", function(e){
 
     e.preventDefault();
 
+    // Cuando la persona envia el form, trae toda la info seleccionada
     const nombre = document.getElementById("nombre").value;
     const fecha = document.getElementById("fecha").value;
     const direccion = document.getElementById("direccion").value;
@@ -55,6 +60,7 @@ document.getElementById("formulario").addEventListener("submit", function(e){
 
     });
 
+    // Organiza la info en un mensaje de texto
     const texto = `NUEVO PEDIDO
 
     Nombre y apellido: ${nombre}
@@ -67,6 +73,7 @@ document.getElementById("formulario").addEventListener("submit", function(e){
     Mensaje: ${mensaje}
     `;
 
+    //Crea un enlace API para enviar el pedido
     const numero = "573206104806";
 
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
@@ -75,7 +82,7 @@ document.getElementById("formulario").addEventListener("submit", function(e){
 
 });
 
-// Mostrar las flores
+// Muestra la info guardada de las flores seleccionadas
 
 const datos = JSON.parse(localStorage.getItem("flores"));
 
