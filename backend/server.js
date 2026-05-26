@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 const connectionString = 
-    "Driver={ODBC Driver 17 for SQL Server};Server=LAURA-SANPC\\SQLEXPRESS;Database=floresEternas;Trusted_Connection=yes;";
+    "Driver={ODBC Driver 17 for SQL Server};Server=LAPTOP-LPE1A15A\\SQLEXPRESS;Database=floresEternas;Trusted_Connection=yes;";
 
 // ==========================================
 // 1. RUTAS ORIGINALES (CATÁLOGO Y COMPRAS)

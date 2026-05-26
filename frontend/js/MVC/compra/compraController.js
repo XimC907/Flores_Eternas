@@ -11,14 +11,8 @@ document.getElementById("form-finalizar-compra").addEventListener("submit", asyn
         return;
     }
 
-    // Simulación de usuario (como no hay login aún, se usa el 1 como ID de cliente por ahpra)
+    // Se captura el id del cliente autenticado
     const clienteID = localStorage.getItem("clienteID"); 
-
-    if (!clienteID) {
-        alert("Debes iniciar sesión en la página de Login antes de proceder con el pago.");
-        window.location.href = "user.html"; // Redirecciona a la pantalla de la foto
-        return;
-    }
     
     // Capturar el método de pago seleccionado del select
     const metodoPago = document.getElementById("metodoPago").value;
@@ -29,7 +23,7 @@ document.getElementById("form-finalizar-compra").addEventListener("submit", asyn
             
             const datosCompra = {
                 clienteID: clienteID,
-                productoID: parseInt(producto.id),
+                productoID: (producto.id),
                 cantidad: 1, // Flujo básico: 1 unidad por ítem
                 metodoPago: metodoPago,
                 totalCompra: producto.precio 
